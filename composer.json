@@ -1,0 +1,35 @@
+{
+    "name":"tsingsun/yii2-messenger",
+    "description":"messenger for send and broadcast message on yii2 php framework,",
+    "keyword":["yii2","messenger"],
+    "type":"yii2-extension",
+    "license": "BSD-3-Clause",
+    "authors":[
+        {
+            "name":"QingShan li",
+            "email":"21997272@qq.com"
+        }
+    ],
+    "require":{
+        "php": ">=5.6.0",
+        "yiisoft/yii2":"~2.0.10"
+    },
+    "require-dev":{
+        "phpunit/phpunit": "4.8.*",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "guzzlehttp/guzzle": "~6.0",
+        "yiisoft/yii2-queue": "~2.0.0",
+        "yiisoft/yii2-redis": "~2.0.6"
+    },
+    "autoload":{
+        "psr-4":{
+            "yii\\messenger\\":"src"
+        }
+    },
+    "suggest":{
+        "yiisoft/yii2-swiftmailer":"the package is used for mail channel",
+        "guzzlehttp/guzzle":"is used for http request in gateway",
+        "yiisoft/yii2-queue": "you can use this package to work with queue",
+        "yiisoft/yii2-redis":"you can use this package to work with queue base on redis"
+    }
+}
