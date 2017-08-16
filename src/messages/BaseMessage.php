@@ -57,7 +57,7 @@ abstract class BaseMessage extends Object implements MessageInterface, ArrayAcce
     {
         parent::init();
         if (!isset($this->_attributes['id']) || $this->_attributes['id']){
-            $this->_attributes['id'] = microtime(true) + rand(0,1024);
+            $this->_attributes['id'] = uniqid('',true);
         }
     }
 
