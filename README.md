@@ -11,7 +11,7 @@ yak-message
 基于这两种现实,可以对系统进行如果划分出通道(channel),网关(gateway)这两个概念来,通道对应消息协议,网关对应在某种协议下的服务接口.
 为什么不直接把通道称之为协议,主要是邮件实际上是由多种协议构成,希望能留一些扩展点.
 
-在一超短信的网关的实现上，还借签了[easy-sms](https://github.com/overtrue/easy-sms)。这个库已经实现现在主流的短信网关实现。
+在一些短信的网关的实现上，还借签了[easy-sms](https://github.com/overtrue/easy-sms)。这个库已经实现现在主流的短信网关实现。
 
 INSTALLATION
 -------
@@ -24,7 +24,7 @@ at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
 You can then install this project template using the following command:
 
 ~~~
-composer require --prefer-dist --stability=dev yak/message --repository-url=''
+composer require --prefer-dist tsingsun/yii2-messenger
 ~~~
 
 ### 消息格式
@@ -146,8 +146,8 @@ key值应该考虑为全局性的,因为后期会使用通用消息而非通道�
     
     {
         "to" : [
-            "18659265199",
-            "1530692016"
+            "186XXXXXXX",
+            "15306XXXXX"
         ],
         "template" : "register",
         "extra" : [
